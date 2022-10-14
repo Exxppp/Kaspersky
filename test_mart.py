@@ -179,7 +179,7 @@ class TestCart:
         page.open()
         page.check_number_of_books_by_order_form()
 
-    def test_correct_display_in_order_form(self, browser):
+    def test_correct_display_total_price_in_order_form(self, browser):
         page = BooksPage(browser)
         page.open()
         page.add_book_to_cart(0, 3)
